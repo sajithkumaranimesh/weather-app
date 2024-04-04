@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input id="cityInput" type="text" placeholder="enter city name" spellcheck="false">
+            <button onclick="searchWeather()"><img src="images/search.png"></button>
+        </div>
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date">
+                    Monday, 24 May
+                </div>
+
+                <div class="others">
+                    <div class="whether-item">
+                        <div>Humidity</div>
+                        <div class="humidity">95.2%</div>
+                    </div>
+                    <div class="whether-item">
+                        <div>Pressure</div>
+                        <div>121</div>
+                    </div>
+                    <div class="whether-item">
+                        <div>Wind Speed</div>
+                        <div class="wind">222</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone">Asia/colombo</div>
+                <div class="country">SL</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="/images/clouds.png" alt="whether icon" class="w-icon">
+            <div class="others">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="mondayDate">Day - 35.6&#176; C</div>
+            </div>
+        </div>
+
+        <div class="whether-forecast" id="whether-forecast">
+            <div class="whether-forecast-item">
+                <div class="day">Tue</div>
+                <img src="/images/clouds.png" alt="whether icon" class="w-icon">
+                <div class="tueTemp">Night - 25.6&#176; C</div>
+                <div class="tueDate">Day - 35.6&#176; C</div>
+            </div>
+            <div class="whether-forecast-item">
+                <div class="day">Wed</div>
+                <img src="/images/clouds.png" alt="whether icon" class="w-icon">
+                <div class="wedTemp">Night - 25.6&#176; C</div>
+                <div class="wedDate">Day - 35.6&#176; C</div>
+            </div>
+            <div class="whether-forecast-item">
+                <div class="day">Thur</div>
+                <img src="/images/clouds.png" alt="whether icon" class="w-icon">
+                <div class="thurTemp">Night - 25.6&#176; C</div>
+                <div class="thurDate">Day - 35.6&#176; C</div>
+            </div>
+            <div class="whether-forecast-item">
+                <div class="day">Fri</div>
+                <img src="/images/clouds.png" alt="whether icon" class="w-icon">
+                <div class="friTemp">Night - 25.6&#176; C</div>
+                <div class="friDate">Day - 35.6&#176; C</div>
+            </div>
+            <div class="whether-forecast-item">
+                <div class="day">Sat</div>
+                <img src="/images/clouds.png" alt="whether icon" class="w-icon">
+                <div class="satTemp">Night - 25.6&#176; C</div>
+                <div class="satDate">Day - 35.6&#176; C</div>
+            </div>
+        </div>
+    </div>
+    <Script src="/assets/app.js"></Script>
+</body>
+
+</html>
